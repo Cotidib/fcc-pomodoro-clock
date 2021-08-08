@@ -1,4 +1,5 @@
 import Button from '../Button/Button';
+import { faRedo } from '@fortawesome/free-solid-svg-icons';
 import './timer.css';
 
 function Timer(props){
@@ -15,8 +16,8 @@ function Timer(props){
           <div id='time-left'>{props.minutes + ":" + props.seconds}</div>
         </div>
         <div className='timer-buttons'>
-          <Button icon={props.currentPlayPause} val={props.currentPlayPause} btnName='start_stop' onClick={handleClick}/>
-          <Button icon='redo' val='restart' btnName='reset' onClick={handleClick}/>
+          <Button icon={props.icon} val={props.currentPlayPause} btnName='start_stop' onClick={handleClick}/>
+          <Button icon={faRedo} val='restart' btnName='reset' onClick={handleClick}/>
           <audio id='beep' src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
         </div>
       </div>

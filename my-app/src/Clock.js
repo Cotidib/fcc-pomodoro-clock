@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSeedling, faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import LengthConfig from './LengthConfig/LengthConfig';
 import Timer from './Timer/Timer';
 import './clock.css';
@@ -12,6 +13,7 @@ function Clock(props){
     const [timerDelay, setTimerDelay] = React.useState(null);
     const [timerState, setTimerState] = React.useState('Session');
     const [playPause, setPlayPause] = React.useState('play');
+    const [playPauseIcon, setPlayPauseIcon] = React.useState(faPlay);
     const [isPaused, setPause] = React.useState(false);
     
     const maxLen = 60;
@@ -128,6 +130,7 @@ function Clock(props){
       if(e == 'play' && isPaused == false)
         {   
           setPlayPause('pause'); 
+          setPlayPauseIcon(faPause);
           setTimerDelay(1000); //this change triggers useInterval
           
         }
@@ -136,6 +139,7 @@ function Clock(props){
           setTimerDelay(1000);
           setPause(false);
           setPlayPause('pause');
+          setPlayPauseIcon(faPause);
         }
       
       else if(e == 'restart')
@@ -155,18 +159,19 @@ function Clock(props){
           setTimerDelay(null); //triggers pause
           setPause(true);
           setPlayPause('play');
+          setPlayPauseIcon(faPlay);
         }
       
     }
     
     return(
       <div className='clock-box'>
-        <FontAwesomeIcon icon='seedling' className='leafs'/>
+        <FontAwesomeIcon icon={faSeedling} className='leafs'/>
         <div className='config-container'>
           <LengthConfig name='break' onClick={handleBreakClick} numDisplay={breakLen}/>
           <LengthConfig name='session' onClick={handleSessionClick} numDisplay={sessionLen}/>
         </div>      
-          <Timer minutes={timerMin} seconds={timerSec} onClick={handleStart} currentState={timerState} currentPlayPause={playPause}/>
+          <Timer minutes={timerMin} seconds={timerSec} onClick={handleStart} currentState={timerState} currentPlayPause={playPause} icon={playPauseIcon}/>
       </div>
     )
   };
