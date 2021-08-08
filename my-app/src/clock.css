@@ -1,0 +1,31 @@
+ 
+  .leafs{
+    transform:scale(9) translateY(-10px);
+    color: #57BE29;
+    z-index: -1;
+  }
+  
+  .clock-box{
+    background-color: #FF4444;
+    position: relative;
+    width: 450px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    margin: auto;
+    margin-top: 12vh;
+    padding: 30px;
+    border-radius: 50%;
+    border: 15px solid white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+  }
+
+  .config-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }

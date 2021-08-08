@@ -1,0 +1,31 @@
+.timer-box{
+    box-sizing: border-box;
+    border: 5px solid white;
+    padding: 10px;
+    background-color: #E52020;
+    border-radius: 30px;
+    width: 70%;
+    
+  }
+  
+  .timer-buttons{
+    display:flex;
+    flex-direction:row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #timer-label{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+  }
+  
+  #time-left{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+  }

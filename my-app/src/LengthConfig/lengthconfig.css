@@ -1,0 +1,24 @@
+
+  .length-config-container{
+    width: 25vh;
+  }
+  
+  .length-label{
+    text-align:center;
+    font-size: 1.5em;
+    padding-bottom: 10%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+  }
+  
+  .length-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E52020;
+  }
+
+  .length-number{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+  }
