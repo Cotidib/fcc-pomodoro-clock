@@ -2,7 +2,7 @@
 freeCodeCamp Front End Libraries Certification: Pomodoro Clock Timer made with React Js and React Hooks
 
 <p align="center">
-  <img width="460" height="auto" src="./my-app/public/pomodoro-ss.png">
+  <img width="600" height="auto" src="./my-app/public/pomodoro-ss.png">
 </p>
 
 ## Assignment
