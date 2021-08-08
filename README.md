@@ -2,7 +2,7 @@
 freeCodeCamp Front End Libraries Certification: Pomodoro Clock made with React Js and React Hooks
 
 ## Assignment
-Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/MJyNMd.
+Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/XpKrrW.
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
 
